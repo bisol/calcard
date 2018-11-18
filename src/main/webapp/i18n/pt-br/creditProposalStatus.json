@@ -1,0 +1,10 @@
+{
+  "calcardApp": {
+    "CreditProposalStatus": {
+      "null": "",
+      "PROCESSING": "Processando",
+      "APROVED": "Aprovada",
+      "REJECTED": "Rejeitada"
+    }
+  }
+}

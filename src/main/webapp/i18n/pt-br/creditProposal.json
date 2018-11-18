@@ -1,0 +1,34 @@
+{
+  "calcardApp": {
+    "creditProposal": {
+      "home": {
+        "title": "Propostas de Crédito",
+        "createLabel": "Criar nova Proposta de Crédito",
+        "createOrEditLabel": "Criar Proposta de Crédito"
+      },
+      "created": "Uma novo Proposta de Crédito foi criado com o identificador {{ param }}",
+      "updated": "Uma Proposta de Crédito foi atualizado com o identificador {{ param }}",
+      "deleted": "Uma Proposta de Crédito foi deletado com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir a Proposta de Crédito {{ id }}?"
+      },
+      "detail": {
+        "title": "Proposta de Crédito"
+      },
+      "clientName": "Name",
+      "taxpayerId": "CPF",
+      "clientAge": "Idade",
+      "gender": "Sexo",
+      "maritalStatus": "Estado Civil",
+      "federationUnit": "Estado",
+      "dependents": "Dependentes",
+      "income": "Renda",
+      "status": "Situação",
+      "rejectionReason": "Motivo",
+      "aprovedMin": "Limite Mínimo",
+      "aprovedMax": "Limite Máximo",
+      "creationDate": "Data de Criação",
+      "processingDate": "Data de Processamento"
+    }
+  }
+}

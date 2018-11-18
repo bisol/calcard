@@ -7,6 +7,7 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entidades",
+        "creditProposal": "Credit Proposal",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
@@ -117,7 +118,8 @@
       "maxbytes": "Este campo não pode ter mais que {{max}} bytes.",
       "pattern": "Este campo deve estar dentro do seguinte padrão {{pattern}}.",
       "number": "Este campo é do tipo número.",
-      "datetimelocal": "Este campo é do tipo data/hora."
+      "datetimelocal": "Este campo é do tipo data/hora.",
+      "cpf": "CPF inválido"
     }
   },
   "error": {
@@ -131,5 +133,5 @@
     "idexists": "Novo(a) {{entityName}} não pode ter uma ID",
     "idnull": "Invalid ID"
   },
-  "footer": "Este é o seu rodapé"
+  "footer": "by Bisol"
 }

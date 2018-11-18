@@ -1,0 +1,9 @@
+{
+  "calcardApp": {
+    "RejectionReason": {
+      "null": "",
+      "POLICY": "Rejected by credit policy",
+      "INCOME": "Low income"
+    }
+  }
+}

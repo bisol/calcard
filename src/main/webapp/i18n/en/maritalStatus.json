@@ -1,0 +1,12 @@
+{
+  "calcardApp": {
+    "MaritalStatus": {
+      "null": "",
+      "SINGLE": "Single",
+      "MARRIED": "Married",
+      "DIVORCED": "Divorced",
+      "WIDOW": "Widow",
+      "OTHER": "Other"
+    }
+  }
+}

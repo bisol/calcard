@@ -1,0 +1,9 @@
+{
+  "calcardApp": {
+    "RejectionReason": {
+      "null": " ",
+      "POLICY": "Reprovado pela política de crédito",
+      "INCOME": "Renda baixa"
+    }
+  }
+}

@@ -1,7 +1,6 @@
 package com.bisol.calcard.config;
 
-import com.bisol.calcard.security.*;
-import com.bisol.calcard.security.jwt.*;
+import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.BeanInitializationException;
 import org.springframework.context.annotation.Bean;
@@ -23,7 +22,9 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.web.filter.CorsFilter;
 import org.zalando.problem.spring.web.advice.security.SecurityProblemSupport;
 
-import javax.annotation.PostConstruct;
+import com.bisol.calcard.security.AuthoritiesConstants;
+import com.bisol.calcard.security.jwt.JWTConfigurer;
+import com.bisol.calcard.security.jwt.TokenProvider;
 
 @Configuration
 @EnableWebSecurity
@@ -106,6 +107,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .antMatchers("/api/authenticate").permitAll()
             .antMatchers("/api/account/reset-password/init").permitAll()
             .antMatchers("/api/account/reset-password/finish").permitAll()
+            .antMatchers("/api/credit-proposals/**").permitAll()
             .antMatchers("/api/**").authenticated()
             .antMatchers("/websocket/tracker").hasAuthority(AuthoritiesConstants.ADMIN)
             .antMatchers("/websocket/**").permitAll()

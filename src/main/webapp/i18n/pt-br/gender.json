@@ -1,0 +1,10 @@
+{
+  "calcardApp": {
+    "Gender": {
+      "null": "",
+      "MALE": "Masc",
+      "FEMALE": "Fem",
+      "OTHER": "Outro"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "clientName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "minlength"
+            ],
+            "fieldValidateRulesMinlength": "3"
+        },
+        {
+            "fieldName": "taxpayerId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "clientAge",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "min"
+            ],
+            "fieldValidateRulesMin": "18"
+        },
+        {
+            "fieldName": "gender",
+            "fieldType": "Gender",
+            "fieldValues": "SINGLE,MARRIED,DIVORCED,WIDOW,OTHER",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "maritalStatus",
+            "fieldType": "MaritalStatus",
+            "fieldValues": "SINGLE,MARRIED,DIVORCED,WIDOW,OTHER",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "federationUnit",
+            "fieldType": "FederationUnit",
+            "fieldValues": "AC,AM",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dependents",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "min"
+            ],
+            "fieldValidateRulesMin": 0
+        },
+        {
+            "fieldName": "income",
+            "fieldType": "BigDecimal",
+            "fieldValidateRules": [
+                "required",
+                "min"
+            ],
+            "fieldValidateRulesMin": 0
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "CreditProposalStatus",
+            "fieldValues": "PROCESSING,APROVED,REJECTED",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "rejectionReason",
+            "fieldType": "RejectionReason",
+            "fieldValues": "POLICY,INCOME"
+        },
+        {
+            "fieldName": "aprovedMin",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "aprovedMax",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "creationDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "processingDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20181115124523",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "serviceClass",
+    "entityTableName": "credit_proposal",
+    "jpaMetamodelFiltering": false,
+    "pagination": "infinite-scroll"
+}
